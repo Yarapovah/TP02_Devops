@@ -43,9 +43,9 @@ jobs:
        # Note: tags has to be all lower-case
          tags: ${{secrets.DOCKERHUB_USERNAME}}/tp-devops-epf:simple-api
      - name: Build image and push database
-# DO the same for database
+      # DO the same for database
      - name: Build image and push httpd
-# DO the same for httpd
+      # DO the same for httpd
      - name: Login to DockerHub
        run: docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{secrets.DOCKERHUB_TOKEN }}
      - name: Build image and push backend
