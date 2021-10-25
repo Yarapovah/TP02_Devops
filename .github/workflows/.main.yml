@@ -32,8 +32,7 @@ jobs:
     - name: Build and test with Maven 
       #run: mvn clean verify --file ./simple-api/pom.xml
       run: mvn -B verify sonar:sonar 
-        -Dsonar.projectKey=yarapovah
-        -Dsonar.organization=Tecly Sorel
+        -Dsonar.projectKey=yarapovah_TP02_Devops
         -Dsonar.host.url=https://sonarcloud.io 
         -Dsonar.login=${{secrets.SONAR_TOKEN }} --file ./simple-api/pom.xml
       
